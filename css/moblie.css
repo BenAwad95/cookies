@@ -1,0 +1,178 @@
+#showcase {
+  /* height: 80vh; */
+}
+
+.showcase-layout {
+  display: block;
+}
+.showcase-content {
+  text-align: center;
+  padding-top: 15%;
+}
+.showcase-content p {
+  text-align: center;
+}
+/* why section */
+
+.why-1,
+.why-2,
+.why-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.why-img {
+  width: 300px;
+}
+
+.why h3 {
+  margin-top: -4rem;
+}
+
+.why-1 div,
+.why-2 div,
+.why-3 div {
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+
+.main-footer .container {
+  flex-direction: column;
+}
+
+.main-footer .logo-footer {
+  display: none;
+}
+
+.main-footer .social {
+  margin-bottom: 0.5rem;
+}
+
+/* about page */
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-img {
+  height: 400px;
+}
+
+/* time line */
+
+.timeline ul li {
+  width: 300px;
+}
+
+.timeline ul li:nth-child(odd) div::after {
+  left: 300px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: 284px;
+}
+
+/* contact page */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.contact-form label {
+  width: 50px;
+  display: inline-block;
+}
+.contact-form input {
+  width: 80%;
+  margin-left: 1rem;
+}
+.contact-form > div {
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width: 650px) {
+  .l-heading {
+    font-size: 2.5rem;
+  }
+
+  #showcase {
+    height: 85vh;
+  }
+
+  .showcase-content {
+    padding-top: 10%;
+  }
+
+  #main-nav .logo {
+    width: 100px;
+    height: 100px;
+  }
+  #main-nav {
+    height: 19vh;
+  }
+  #main-nav .container {
+    flex-direction: column;
+  }
+
+  .why-1 div,
+  .why-2 div,
+  .why-3 div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .why p {
+    margin: 0 1rem;
+  }
+  .why h3 {
+    margin: 0.5rem;
+  }
+  /* about page */
+
+  #about .container h1 {
+    font-size: 2.3rem;
+  }
+
+  .about-img {
+    border-top: cadetblue 6px solid;
+    border-bottom: cadetblue 6px solid;
+  }
+
+  .timeline ul li:nth-child(odd) {
+    float: none;
+  }
+  .timeline ul li:nth-child(odd) div::after {
+    left: -58px;
+  }
+  .timeline ul li:nth-child(odd) div::before {
+    left: -30px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent cadetblue transparent;
+  }
+  .timeline {
+    margin: 1rem 2rem;
+  }
+  .timeline ul li {
+    width: 350px;
+  }
+  .contact-form label {
+  }
+  .contact-form .mes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-form .mes label {
+    margin-bottom: 1rem;
+  }
+  .contact-form .mes {
+    height: 20vh;
+    width: 90%;
+  }
+}
