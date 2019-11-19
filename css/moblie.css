@@ -12,6 +12,9 @@
 .showcase-content p {
   text-align: center;
 }
+.showcase-content a {
+  margin-left: 0;
+}
 /* why section */
 
 .why-1,
@@ -22,6 +25,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
+  position: relative;
 }
 
 .why-img {
@@ -100,14 +104,12 @@
 @media (max-width: 650px) {
   .l-heading {
     font-size: 2.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
-
-  #showcase {
-    height: 85vh;
-  }
-
-  .showcase-content {
-    padding-top: 10%;
+  .bottom-line {
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   #main-nav .logo {
@@ -115,10 +117,23 @@
     height: 100px;
   }
   #main-nav {
-    height: 19vh;
+    height: 22vh;
   }
   #main-nav .container {
     flex-direction: column;
+  }
+
+  #showcase {
+    height: 80vh;
+  }
+
+  .showcase-content {
+    padding-top: 10%;
+  }
+
+  .showcase-content p {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .why-1 div,
@@ -130,12 +145,27 @@
 
   .why p {
     margin: 0 1rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: center;
   }
   .why h3 {
-    margin: 0.5rem;
+    width: 50%;
+    text-align: center;
+    margin: 1rem auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .why .why-img {
+    margin-top: 18%;
+    margin-bottom: 0.5rem;
   }
   /* about page */
-
+  #about .container p {
+    text-align: center;
+  }
   #about .container h1 {
     font-size: 2.3rem;
   }
@@ -160,7 +190,7 @@
     margin: 1rem 2rem;
   }
   .timeline ul li {
-    width: 350px;
+    width: 290px;
   }
   .contact-form label {
   }
@@ -174,5 +204,12 @@
   .contact-form .mes {
     height: 20vh;
     width: 90%;
+  }
+  .address div {
+    width: 300px;
+  }
+
+  .main-footer p {
+    font-size: 1rem;
   }
 }

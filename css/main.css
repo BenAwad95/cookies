@@ -167,7 +167,7 @@ body {
 .why h3 {
   background: #fff;
   color: cadetblue;
-  display: inline-block;
+  display: block;
   padding: 0.5rem 0.75rem;
   border-radius: 15px;
 }
